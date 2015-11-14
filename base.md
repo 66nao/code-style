@@ -1,6 +1,6 @@
 # 前端通用开发规范
 ## 参阅
-[编码规范](http://zoomzhao.github.io/code-guide/)
+[编码规范](http://zoomzhao.github.io/code-guide/)  
 [知乎-丁小倪的回答](http://www.zhihu.com/question/19963993/answer/13496088)
 
 ## 说明
@@ -221,3 +221,8 @@ description  ->  desc
 - 使用 [W3C CSS Validator](http://jigsaw.w3.org/css-validator/) 来验证你的CSS代码有效性
 
 > 代码验证不是最终目的，真的目的在于让开发者在经过多次的这种验证过程后，能够深刻理解到怎样的语法或写法是非标准和不推荐的，即使在某些场景下被迫要使用非标准写法，也可以做到心中有数。
+
+## 图形图片
+- 所有图片必须经过一定的压缩和优化才能发布
+- 图片保存格式为png还是jpg的判断基础标准就是图片质量和图片大小，在满足质量的情况下选择文件大小小的那个
+- 多个小图片需要进行sprite（CSS Sprite是一种将数个图片合成为一张大图的技术（既可以是背景图也可以是前景图），然后通过偏移来进行图像位置选取）处理
