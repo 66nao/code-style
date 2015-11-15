@@ -46,7 +46,7 @@
     xxx
   </nav>
   <!-- nav end -->
-  
+
   <!-- head start -->
   <header>
   	<ul>
@@ -55,7 +55,7 @@
     </ul>
   </header>
   <!-- head end -->
-  
+
   <!-- footer start -->
   <footer>
     xxx
@@ -106,7 +106,7 @@
       // some code
     }
   });
-  
+
   // some code
   /**
    * 模态框打开前触发的事件，可以通过下面这种方式监听
@@ -115,8 +115,8 @@
    *   // you can return false to prevent opening
    * })
    */
-  $modal.trigger('modal.opening);
-})(jQuery); 
+  $modal.trigger('modal.opening');
+})(jQuery);
 ```
 - 使用`TODO`注释表明后续需要实现的地方，使用`FIXME`注释表明后续需要修改的地方（HTML、CSS、JavaScript通用）。
 
@@ -234,5 +234,23 @@ description  ->  desc
 - 所有图片必须经过一定的压缩和优化才能发布
 - 图片保存格式为png还是jpg的判断基础标准就是图片质量和图片大小，在满足质量的情况下选择文件大小小的那个
 - 多个小图片需要进行sprite（CSS Sprite是一种将数个图片合成为一张大图的技术（既可以是背景图也可以是前景图），然后通过偏移来进行图像位置选取）处理
+
+
+## 前端自动化构建
+*所有静态资源的引用不要与后台语言关联，这样就不方便构建*
+
+关于构建方案的选型仍在考虑中，是`gulp`,`fis`,` browserify`,`webpack`还是`coolie`或者其它？
+
+## Hint & Lint
+使用hint/lint来实现编码中规范化。  
+目前正在学习研究制作中  
+目前已有方案：
+
+- `jshint`,`jslint`
+- `csshint`,`csslint`
+- `stylint`
+
+## 模版
+建议从[Boilerplate](https://html5boilerplate.com/)开始开发一个新的项目
 
 ## 其它

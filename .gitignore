@@ -1,0 +1,12 @@
+# Mac生成
+.DS_Store
+
+# JetBrains相关IDE，PhpStorm,WebStorm等
+.idea
+
+# Atom编辑器
+.atom
+
+# sublime编辑器
+*.sublime-workspace
+*.sublime-project

@@ -1,0 +1,32 @@
+# EditorConfig is awesome: http://EditorConfig.org
+#
+# 六六脑开发规范配置
+#
+# top-most EditorConfig file
+root = true
+
+# 全局通用配置
+[*]
+# 换行符使用lf
+end_of_line = lf
+# 文件结束处添加一行
+insert_final_newline = true
+# 所有文件采用utf-8编码
+charset = utf-8
+# 忽略行首前的任意空格
+trim_trailing_whitespace = true
+
+# markdown文件
+[*.md]
+trim_trailing_whitespace = false
+
+# 前端通用
+[*.{html,js,coffee,css,styl}]
+# 使用2个空格的soft-tabs
+indent_style = space
+indent_size = 2
+
+# 后端通用
+[*.php,*.class.php]
+indent_style = space
+indent_size = 4
