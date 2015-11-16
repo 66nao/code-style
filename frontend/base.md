@@ -19,7 +19,7 @@
 > 将结构与表现、行为分离，保证它们之间的最小耦合，这对前期开发和后期维护都至关重要。
 
 ## 文件命名
-- 文件名统一小些
+- 文件名统一小写
 - 单词与单词件使用`-`连接，如果是插件，可以用`.`连接，如`jquery.fileupload.js`
 - 压缩的文件都加上`.min`，非压缩的都不要有
 
@@ -222,7 +222,7 @@ var students = [{
 
 ```
 navigation   ->  nav
-button       ->  button
+button       ->  btn
 description  ->  desc
 ```
 
