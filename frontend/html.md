@@ -69,14 +69,20 @@
 - 所有的属性值必须小写
 
 ## IE 兼容模式
-Internet Explorer 支持使用兼容性 <meta> 标签来指定使用什么版本的 IE 来渲染页面。如果不是特殊需要，通常通过 edge mode 来通知 IE 使用最新的兼容模式。
+Internet Explorer 支持使用兼容性`<meta>`标签来指定使用什么版本的 IE 来渲染页面。如果不是特殊需要，通常通过 edge mode 来通知 IE 使用最新的兼容模式。
 
 ```html
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 ```
 
+## 360等国内浏览器
+添加下面的标签来告诉浏览器（主要是360浏览器）使用webkit内核来渲染页面
+```html
+<meta name="renderer" content="webkit">
+```
+
 ## 引入 CSS 和 JavaScript
-- 根据 HTML5 规范, 通常在引入 CSS 和 JavaScript 时不需要指明 type，因为 `text/css` 和 `text/javascript` 分别是他们的默认值。
+- 根据 HTML5 规范, 通常在引入 CSS 和 JavaScript 时不需要指明 type，因为 `text/css` 和 `text/javascript` 分别是它们的默认值。
 
 ```html
 <!-- External CSS -->
