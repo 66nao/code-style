@@ -8,7 +8,7 @@
 [JavaScript编码规范](https://github.com/fex-team/styleguide/blob/master/javascript.md)  
 
 ## 命名
-- 常量的形式如:`NAMES_LIKE_THIS`，全部使用大写字符，并用下划线分隔。你也可用`@const`标记来指明它是一个常量。但请永远不要使用`const`关键词。常亮定义后就不要去修改
+- 常量的形式如:`NAMES_LIKE_THIS`，全部使用大写字符，并用下划线分隔。你也可用`@const`标记来指明它是一个常量。但请永远不要使用`const`关键词。常量定义后就不要去修改
 - 变量的命名格式统一使用`Camel命名法`，即驼峰格式
 
 ```js
@@ -48,7 +48,7 @@ var string = 'Foo'+bar;
 // good
 var string = 'Foo' + bar;
 ```
-- 使用`string` 时，用单引号替代双引号（写JSON 时除外）
+- 使用`string` 时，用单引号替代双引号（JSON除外）
 
 ```js
 // bad
@@ -60,7 +60,7 @@ var foo = 'bar';
 var http = require('http');
 ```
 
-- 使用用`===`和`!==`来做比较而不是`==`和`!=`
+- 使用`===`和`!==`来做比较而不是`==`和`!=`
 - 使用字面表达式，禁止使用new来创建基础类型变量，用`{}`,`[]`代替`new Array`，`new Object`，不要使用 `string`，`bool`，`number` 的对象类型，即不要调用 `new String` ，`new Boolean` ，`new Number`
 - 避免使用`with`与`eval`，`eval`仅用于解析序列化串
 - 使用`this`时应当十分小心，要理解清楚`this`具体指向的是哪个对象
@@ -192,9 +192,9 @@ $('#items').find('.selected').highlight().end()
 - 不要使用关键字、保留字作为键值，例如`class`,`default`
 - json对象的最后一个不要有逗号`,`
 
-```json
+```js
 // bad
-[{
+var students = [{
   name: '',
   age: 12,
 }, {
@@ -203,7 +203,7 @@ $('#items').find('.selected').highlight().end()
 },]
 
 // good
-[{
+var students = [{
   name: '',
   age: 12
 }, {
@@ -382,7 +382,7 @@ window.util = util;
 [注释](https://github.com/fex-team/styleguide/blob/master/javascript.md#24-注释)
 
 ## CoffeeScript
-建议使用CoffeeScript书写代码，但前提是你已经熟悉了JavaScript。引用知乎上的一个回答。
+建议使用CoffeeScript书写代码，但前提是你已经熟悉了JavaScript。引用知乎上[Brandon Wu](http://www.zhihu.com/people/brandon-wu)的回答。
 > CoffeeScript = The Good Parts of JavaScript + Syntax Sugar
 
 > CoffeeScript 只是让你用一种愉♂悦的方式来写正确的 JavaScript

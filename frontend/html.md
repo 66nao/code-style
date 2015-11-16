@@ -6,7 +6,6 @@
 - 嵌套的节点应该缩进（两个空格）
 
 ```html
-  <!-- good -->
   <body>
     <img src="images/company-logo.png" alt="Company">
     <h1 class="hello-world">Hello, world!</h1>
@@ -67,7 +66,7 @@
 ## 小写
 - 所有的HTML标签必须小写
 - 所有的HTML属性必须小写
-- 所有的属性值必须要小写
+- 所有的属性值必须小写
 
 ## IE 兼容模式
 Internet Explorer 支持使用兼容性 <meta> 标签来指定使用什么版本的 IE 来渲染页面。如果不是特殊需要，通常通过 edge mode 来通知 IE 使用最新的兼容模式。
@@ -93,12 +92,16 @@ Internet Explorer 支持使用兼容性 <meta> 标签来指定使用什么版本
 ```
 - 为保持各浏览器表现一致性，在html开头先引入[Normalize.css](https://github.com/necolas/normalize.css)，不要使用[reset.css](http://cssreset.com/)。
 > Normalize.css preserves useful defaults rather than "unstyling" everything.
+> 
 > Normalize.css corrects some common bugs that are out of scope for reset.css.
+> 
 > Normalize.css doesn't clutter your dev tools. 
+> 
 > Normalize.css is more modular. 
+> 
 > Normalize.css has better documentation.
 
-- 省略图像、媒体文件、样式表和脚本等URL协议头部声明 ( http: , https: )。如果不是这两个声明的URL则不省略。
+- 省略图像、媒体文件、样式表和脚本等URL协议头部声明 ( http: , https: )。如果不是这两个声明的URL则不能省略。
 省略协议声明，使URL成相对地址，防止内容混淆问题和导致小文件重复下载（这个主要是指http和https交杂的场景中）。
 
 ```html
@@ -108,6 +111,8 @@ Internet Explorer 支持使用兼容性 <meta> 标签来指定使用什么版本
 <!-- good -->
 <script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
 ```
+
+- 尽量避免在html中使用内联css和内联js，这样才能做到结构的解耦和方便构建的进行
 
 ## 实用高于完美
 尽量遵循 HTML 标准和语义，但是不应该以浪费实用性作为代价。任何时候都要用尽量小的复杂度和尽量少的标签来解决问题。
