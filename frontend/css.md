@@ -67,8 +67,8 @@ body {
 
 序号|分组|包含的属性
 ---|---|---
-1| Positioning 位置| display position left top float等
-2| Box Model 盒模型| width height margin padding border等
+1| Positioning 位置| position left top float等
+2| Box Model 盒模型| display width height margin padding border等
 3| Typographic 排版| font color text-align等
 4| Visual 外观| background-color border opacity等
 
@@ -195,8 +195,9 @@ Positioning 处在第一位，因为他可以使一个元素脱离正常文本�
 ```
 ## class命名
 *待实际开发验证*
+
 前缀|说明|示例
----|---|---|
+---|---|---
 g-|全局通用样式命名，前缀g全称为global，一旦修改将影响全站样式|g-layout
 m-|模块命名方式|m-user-manager
 c-|组件命名方式|c-calendar
@@ -224,7 +225,7 @@ js- 这种级别的className完全交由JSer自定义，但是命名的规则也
 
 
 ## 选择器
-- 不要使用类型选择器（元素选择器），因为结构可能会发生改变
+- 不要使用通用类型选择器（元素选择器），因为结构可能会发生改变
 
 ```css
 // bad
@@ -251,7 +252,6 @@ div.doc {
 }
 ```
 
-- 使用 classes 而不是通用元素标签来优化渲染性能
 - 减少选择器的长度，每个组合选择器选择器的条目应该尽量控制在 3 个以内
 - 避免在经常出现的组件中使用一些属性选择器 (例如，`[class^="..."]`)。浏览器性能会受到这些情况的影响
 - 只在必要的情况下使用后代选择器 (例如，没有使用带前缀classes的情况)
@@ -261,26 +261,6 @@ div.doc {
 - 制定一个一致的注释层级结构
 - 使用一致的空白来分割代码块（模块与模块间使用3个空格，样式与样式间使用1个空格），这样做在查看大的文档时更有优势
 - 当使用多个 CSS 文件时，通过组件而不是页面来区分他们。页面会被重新排列组合，而组件是可以移动的
-
-```css
-/*
- * Component section heading
- */
-
-.element { ... }
-
-
-/*
- * Component section heading
- *
- * Sometimes you need to include optional context for the entire component. Do that up here if it's important enough.
- */
-
-.element { ... }
-
-/* Contextual sub-component or modifer */
-.element-heading { ... }
-```
 
 ## 注释
 保持注释内容与星号之间有一个空格的距离
