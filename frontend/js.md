@@ -27,7 +27,7 @@ function TextNode(options) {
 ```
 - 类名使用`名词`
 - 函数名使用`动宾短语`
-- boolean型变量使用`js`,`has`开头
+- boolean型变量使用`is`,`has`开头
 - Promise对象使用`动宾短语的进行时`
 
 ```js
@@ -98,7 +98,7 @@ if (a) {...}
 var a = 0;
 var b = 0;
 ```
-- 所有变量声明都放在函数的头部，所有函数都在使用之前定义
+- 所有变量声明都放在头部，所有函数都在使用之前定义，先写变量，后写函数
 - 永远不要把参数命名为 `arguments`。这将取代函数作用域内的 `arguments` 对象
 - 使用 `.` 来访问对象的属性，只有当通过变量访问属性时才使用中括号 `[]`
 - 使用`parseInt`时，必须指定进制
@@ -159,6 +159,7 @@ if (user.isAuthenticated() &&
   // Code
 }
 
+// good
 if (user.isAuthenticated()
   && user.isInRole('admin')
   && user.hasAuthority('add-admin')
