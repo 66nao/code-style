@@ -1,0 +1,91 @@
+{
+    "maxerr"        : 50,       // {int} Maximum error before stopping
+
+    // 强制选项
+    "bitwise"       : true,     // true: 禁止使用位运算符 (&, |, ^, etc.)
+    "camelcase"     : true,     // true: 必须使用驼峰命名法
+    "curly"         : true,     // true: 必须要大括号包裹代码
+    "eqeqeq"        : true,     // true: 强制使用===
+    "forin"         : true,     // true: 使用for..in循环遍历的时候需要使用obj.hasOwnProperty()来过滤
+    "freeze"        : true,     // true: 禁止覆盖类似于Array, Date这样的原生类的原型
+    "immed"         : false,    // true: 需要被包裹在块中，比如`(function () { } ());`
+    "indent"        : 2,        // {int} 缩进的空格数
+    "latedef"       : true,     // true: 要求变量和函数必须在使用前定义
+    "newcap"        : true,     // true: 构造器函数首字母大写，比如 `new F()`
+    "noarg"         : true,     // true: 禁止使用 arguments.caller 和 arguments.callee ，未来会被弃用， ECMAScript 5 禁止使用 arguments.callee
+    "noempty"       : true,     // true: 禁止使用空的块
+    "nonbsp"        : true,     // true: 禁止使用 "non-breaking whitespace" 字符
+    "nonew"         : false,    // true: Prohibit use of constructors for side-effects (without assignment)
+    "plusplus"      : false,    // true: 禁止使用 `++` 和 `--`
+    "quotmark"      : "single",    // Quotation mark consistency:
+                                //   false    : do nothing (default)
+                                //   true     : ensure whatever is used is consistent
+                                //   "single" : require single quotes
+                                //   "double" : require double quotes
+    "undef"         : true,     // true: 要求所有的非全局变量必要要声明，防止污染全局变量
+    "unused"        : true,     // 变量未使用时：
+                                //   true     : 所有的变量和函数的最后一个参数
+                                //   "vars"   : 只有变量
+                                //   "strict" : 所有的变量和函数所有的参数
+    "strict"        : true,     // true: 严格模式，要求所有的函数都运行在ES5严格模式下
+    "maxparams"     : 3,        // {int} 函数最大的参数数量
+    "maxdepth"      : false,    // {int} 最大嵌套深度(函数内)
+    "maxstatements" : false,    // {int} 每个函数最多的声明数量
+    "maxcomplexity" : false,    // {int} Max cyclomatic complexity per function
+    "maxlen"        : 120,      // {int} 每行最多的字符数
+    "varstmt"       : false,    // true: 不允许任何的 var 的声明，只能使用 let 和 const
+
+    // 宽松选项
+    "asi"           : false,     // true: 允许省略分号
+    "boss"          : false,     // true: 允许在 if，for，while 语句中使用赋值
+    "debug"         : false,     // true: 允许 debugger 语句，比如 browser breakpoints.
+    "eqnull"        : false,     // true: 允许使用 `== null`
+    "es5"           : true,      // true: 允许 ES5 语法 (例如: getters and setters)
+    "esnext"        : false,     // true: 允许 ES6 语法 (ex: `const`)
+    "moz"           : false,     // true: 允许 Mozilla 特定的语法 (extends and overrides esnext features)
+                                 // (ex: `for each`, multiple try/catch, function expression…)
+    "evil"          : false,     // true: 允许使用 `eval` 和 `new Function()`
+    "expr"          : false,     // true: 允许应该出现赋值或函数调用的地方使用表达式
+    "funcscope"     : false,     // true: 允许在控制体内定义变量而在外部使用
+    "globalstrict"  : false,     // true: 允许全局严格模式，放在全局域可能造成JS文件链接错误
+    "iterator"      : false,     // true: 允许__iterator__，不是所有的浏览器都支持__iterator__
+    "lastsemic"     : false,     // true: 允许单行控制块省略分号
+    "laxbreak"      : false,     // true: 允许不安全的行中断(与laxcomma配合使用)
+    "laxcomma"      : false,     // true: 允许逗号开头的编码样式
+    "loopfunc"      : false,     // true: 允许循环中定义函数
+    "multistr"      : true,      // true: 允许多行字符串
+    "noyield"       : false,     // true: 允许发生器中没有yield语句
+    "notypeof"      : false,     // true: 允许非法的typeof操作
+    "proto"         : false,     // true: 允许 proto，不是所有的浏览器都支持__proto__
+    "scripturl"     : false,     // true: Tolerate script-targeted URLs
+    "shadow"        : false,     // true: 允许在代码中重定义变量，比如 `var x=1; x=2;`
+    "sub"           : false,     // true: 允许使用 `[]` 来获取成员变量
+    "supernew"      : false,     // true: 允许使用 `new function () { ... };` 和 `new Object;`
+    "validthis"     : false,     // true: 允许严格模式下在非构造函数中使用this
+
+    // Environments
+    "browser"       : true,     // Web Browser (window, document, etc)
+    "browserify"    : false,    // Browserify (node.js code in the browser)
+    "couch"         : false,    // CouchDB
+    "devel"         : true,     // Development/debugging (alert, confirm, etc)
+    "dojo"          : false,    // Dojo Toolkit
+    "jasmine"       : false,    // Jasmine
+    "jquery"        : false,    // jQuery
+    "mocha"         : true,     // Mocha
+    "mootools"      : false,    // MooTools
+    "node"          : false,    // Node.js
+    "nonstandard"   : false,    // Widely adopted globals (escape, unescape, etc)
+    "phantom"       : false,    // PhantomJS
+    "prototypejs"   : false,    // Prototype and Scriptaculous
+    "qunit"         : false,    // QUnit
+    "rhino"         : false,    // Rhino
+    "shelljs"       : false,    // ShellJS
+    "typed"         : false,    // Globals for typed array constructions
+    "worker"        : false,    // Web Workers
+    "wsh"           : false,    // Windows Scripting Host
+    "yui"           : false,    // Yahoo User Interface
+
+    // Custom Globals
+    // 全局变量列表
+    "globals"       : {}
+}
