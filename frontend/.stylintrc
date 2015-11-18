@@ -1,35 +1,35 @@
 {
-    "blocks": false,                                //
-    "brackets": "never",                            // 不要使用大括号 `{}`
-    "colons": "always",                             // 必须使用 `:`
-    "colors": false,                                // 不强制颜色使用变量
-    "commaSpace": "never",                          // 不允许在逗号后添加空格
-    "commentSpace": "always",                       // 注释符号后面必须添加一个空格
-    "cssLiteral": "never",                          // 不要在stylus中使用@css，即使用原始的css
-    "depthLimit": 4,                                // 选择器深度不允许超过4个
-    "duplicates": true,                             // 判断选择器和属性中是否有非必需的重复的内容
-    "efficient": "always",                          // 使用更有效的属性值写法
-    "extendPref": "@extend",                        // 使用 '@extend' 写法，不允许使用 '@extends'
-    "globalDupe": false,                            // 不进行全局判断
-    "indentPref": 2,                                // 一个tab对应2个空格
-    "leadingZero": "always",                        // 小数时不要使用无意义的小数点开始前的0
-    "maxErrors": 50,                                // 最大的错误数量
-    "maxWarnings": 50,                              // 最大的警告数量
-    "mixed": false,                                 // 不支持空格和tab混合书写
-    "namingConvention": "lowercase-dash",           // 使用 `$var-name` 而不是 `$var_name` 或者 `$varName` 这样的命名
-    "namingConventionStrict": false,                // 不启用 `namingConvention` 严格模式，可能会引用第三方的css库
-    "none": "always",                               // 使用 `none` 而不是 `0`，比如使用 `border none` 而不是 `border 0`
-    "noImportant": true,                            // 使用 `!important` 时给出警告
-    "parenSpace": "never",                          // 参数中不要带有空格
-    "placeholders": "always",
-    "prefixVarsWithDollar": "always",               // 变量强制使用 $ 前缀
-    "quotePref": "double",                          // 字符串的值使用双引号
-    "semicolons": "never",                          // 不使用句尾冒号
-    "sortOrder": "grouped",                         // 属性排序规则
-    "stackedProperties": "never",                   // 不允许使用一行的样式规则
-    "trailingWhitespace": "never",                  // 句尾不允许出现空格
-    "universal": false,                             // 忽略 `*` 选择器
-    "valid": true,                                  // 检测是否是有效的html标签或者css属性
-    "zeroUnits": "never",                           // `0` 不要带单位
-    "zIndexNormalize": false                        // 不进行z-index数值的强制要求
+  "blocks": false,
+  "brackets": "never",
+  "colons": "always",
+  "colors": false,
+  "commaSpace": "never",
+  "commentSpace": "always",
+  "cssLiteral": "never",
+  "depthLimit": 4,
+  "duplicates": true,
+  "efficient": "always",
+  "extendPref": "@extend",
+  "globalDupe": false,
+  "indentPref": 2,
+  "leadingZero": "always",
+  "maxErrors": 50,
+  "maxWarnings": 50,
+  "mixed": false,
+  "namingConvention": "lowercase-dash",
+  "namingConventionStrict": false,
+  "none": "always",
+  "noImportant": true,
+  "parenSpace": "never",
+  "placeholders": "always",
+  "prefixVarsWithDollar": "always",
+  "quotePref": "double",
+  "semicolons": "never",
+  "sortOrder": "grouped",
+  "stackedProperties": "never",
+  "trailingWhitespace": "never",
+  "universal": false,
+  "valid": true,
+  "zeroUnits": "never",
+  "zIndexNormalize": false
 }

@@ -10,3 +10,6 @@
 # sublime编辑器
 *.sublime-workspace
 *.sublime-project
+
+# Nodejs模块
+node_modules

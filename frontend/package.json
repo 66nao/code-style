@@ -3,5 +3,9 @@
   "version": "0.1.0",
   "description": "六六脑前端开发规范",
   "author": "erguotou <erguotou525@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^6.0.1",
+    "yamljs": "^0.2.4"
+  }
 }

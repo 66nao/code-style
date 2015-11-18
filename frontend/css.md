@@ -279,7 +279,7 @@ div.doc {
  * 描述：酒店详情模块
  * 应用：page detail, info and etc...etc
  */
-``` 
+```
 
 > 有特殊作用的规则一定要有注释说明
 
