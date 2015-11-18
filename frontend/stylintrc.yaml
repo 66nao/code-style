@@ -1,3 +1,6 @@
+# stylint 配置文件
+# stylint 配置说明文件地址：https://github.com/rossPatton/stylint
+
 blocks: false                                #
 brackets: never                              # 不要使用大括号 `{}`
 colons: always                               # 必须使用 `:`

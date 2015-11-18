@@ -1,0 +1,34 @@
+# csslint 配置文件
+# 配置说明地址：https://github.com/CSSLint/csslint/wiki/Rules-by-ID
+
+adjoining-classes:                    false     # 关闭对于使用连续 class 例如 .bar.foo 的警告
+box-model:                            true      # 当没有设置 `box-sizing: border-box` 时警告
+box-sizing:                           false     # 关闭对于设置了 `box-sizing: border-box` 时的警告
+bulletproof-font-face:                true      # 设置自定义字体时要求有这样的设置 `webfont.eot?#iefix`
+compatible-vendor-prefixes:           false     # 关闭对于私有属性前缀的问题，使用 stylus 的 mixin 自定义
+empty-rules:                          true      # 如果有空样式则给出警告
+display-property-grouping:            true      # 根据 display 去除无用的属性
+duplicate-background-images:          true      # 不允许出现重复的带 url 的 background
+duplicate-properties:                 true      # 不允许出现重复的属性
+fallback-colors:                      false     # 忽略颜色的兼容性设置
+floats:                               false     # 忽略 float 使用过多的情况
+font-faces:                           false     # 允许使用 font-face
+font-sizes:                           false     # 忽略在 font-size 使用过多的问题
+gradients:                            false     # 忽略渐变的浏览器私有前缀属性设置
+ids:                                  false     # 允许使用 id 选择器，但必须少用
+import:                               true      # 禁止使用 css 的 @import
+important:                            false     # 允许使用 !important
+known-properties:                     false     # 忽略不认识的属性的警告
+outline-none:                         true      # 只允许在 :focus 中设置 outline
+overqualified-elements:               false     # 忽略使用元素选择器的情况
+qualified-headings:                   true      # h1-h6 选择器不需要在加前置条件
+regex-selectors:                      false     # 允许部分属性选择器
+shorthand:                            true      # 当 margin 和 padding 可以简写时要求简写
+star-property-hack:                   true      # 不允许使用星号 * 的 hack 写法
+text-indent:                          false     # 忽略 text-indent 的值的范围
+underscore-property-hack:             true      # 不允许使用下划线 _ 的 hack 写法
+unique-headings:                      true      # h1-h6 选择器只允许出现一次
+universal-selector:                   false     # 忽略星号 * 选择器，但是也不能随便用
+unqualified-attributes:               true      # 不允许直接使用没有限制的属性选择器比如 `[type=text]`
+vendor-prefix:                        true      # 出现私有前缀属性时必须要有标准属性，并且标准属性必须出现在私有前缀最后
+zero-units:                           true      # 不要在 0 后面加单位
