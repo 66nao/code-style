@@ -13,3 +13,6 @@
 
 # Nodejs模块
 node_modules
+
+# npm安装错误日志
+npm-debug.log
