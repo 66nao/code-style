@@ -3,7 +3,7 @@
 
 blocks: false                                #
 brackets: never                              # 不要使用大括号 `{}`
-colons: always                               # 必须使用 `:`
+colons: false                                # 不使用 `:`
 colors: false                                # 不强制颜色使用变量
 commaSpace: never                            # 不允许在逗号后添加空格
 commentSpace: always                         # 注释符号后面必须添加一个空格
