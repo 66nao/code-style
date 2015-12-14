@@ -3,7 +3,7 @@
   "brackets": "never",
   "colons": false,
   "colors": false,
-  "commaSpace": "never",
+  "commaSpace": "always",
   "commentSpace": "always",
   "cssLiteral": "never",
   "depthLimit": 4,
