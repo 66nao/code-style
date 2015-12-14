@@ -14,7 +14,7 @@ efficient: always                            # 使用更有效的属性值写法
 extendPref: @extend                          # 使用 '@extend' 写法，不允许使用 '@extends'
 globalDupe: false                            # 不进行全局判断
 indentPref: 2                                # 一个tab对应2个空格
-leadingZero: always                          # 小数时不要使用无意义的小数点开始前的0
+leadingZero: never                          # 小数时不要使用无意义的小数点开始前的0
 maxErrors: 50                                # 最大的错误数量
 maxWarnings: 50                              # 最大的警告数量
 mixed: false                                 # 不支持空格和tab混合书写

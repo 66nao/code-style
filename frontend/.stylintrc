@@ -12,7 +12,7 @@
   "extendPref": "@extend",
   "globalDupe": false,
   "indentPref": 2,
-  "leadingZero": "always",
+  "leadingZero": "never",
   "maxErrors": 50,
   "maxWarnings": 50,
   "mixed": false,
