@@ -52,7 +52,7 @@ funcscope     : false    # true: 允许在控制体内定义变量而在外部�
 globalstrict  : false    # true: 允许全局严格模式，放在全局域可能造成JS文件链接错误
 iterator      : false    # true: 允许__iterator__，不是所有的浏览器都支持__iterator__
 lastsemic     : false    # true: 允许单行控制块省略分号
-laxbreak      : false    # true: 允许不安全的行中断(与laxcomma配合使用)
+laxbreak      : true     # true: 允许不安全的行中断(与laxcomma配合使用)
 laxcomma      : false    # true: 允许逗号开头的编码样式
 loopfunc      : false    # true: 允许循环中定义函数
 multistr      : true     # true: 允许多行字符串
