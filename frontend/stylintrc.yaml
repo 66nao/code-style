@@ -14,7 +14,7 @@ efficient: always                            # 使用更有效的属性值写法
 extendPref: @extend                          # 使用 '@extend' 写法，不允许使用 '@extends'
 globalDupe: false                            # 不进行全局判断
 indentPref: 2                                # 一个tab对应2个空格
-leadingZero: never                          # 小数时不要使用无意义的小数点开始前的0
+leadingZero: never                           # 小数时不要使用无意义的小数点开始前的0
 maxErrors: 50                                # 最大的错误数量
 maxWarnings: 50                              # 最大的警告数量
 mixed: false                                 # 不支持空格和tab混合书写
@@ -27,10 +27,10 @@ placeholders: always
 prefixVarsWithDollar: always                 # 变量强制使用 $ 前缀
 quotePref: double                            # 字符串的值使用双引号
 semicolons: never                            # 不使用句尾冒号
-sortOrder: grouped                           # 属性排序规则
+sortOrder: false                             # 属性排序规则
 stackedProperties: never                     # 不允许使用一行的样式规则
 trailingWhitespace: never                    # 句尾不允许出现空格
 universal: false                             # 忽略 `*` 选择器
-valid: true                                  # 检测是否是有效的html标签或者css属性
+valid: false                                 # 检测是否是有效的html标签或者css属性
 zeroUnits: never                             # `0` 不要带单位
 zIndexNormalize: false                       # 不进行z-index数值的强制要求
