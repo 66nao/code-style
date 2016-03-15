@@ -25,11 +25,11 @@
   "prefixVarsWithDollar": "always",
   "quotePref": "double",
   "semicolons": "never",
-  "sortOrder": "grouped",
+  "sortOrder": false,
   "stackedProperties": "never",
   "trailingWhitespace": "never",
   "universal": false,
-  "valid": true,
+  "valid": false,
   "zeroUnits": "never",
   "zIndexNormalize": false
 }

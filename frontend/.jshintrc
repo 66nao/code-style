@@ -19,7 +19,7 @@
   "undef": true,
   "unused": true,
   "strict": true,
-  "maxparams": 3,
+  "maxparams": 5,
   "maxdepth": false,
   "maxstatements": false,
   "maxcomplexity": false,

@@ -30,7 +30,7 @@ unused        : true     # 变量未使用时：
                             #   vars   : 只有变量
                             #   strict : 所有的变量和函数所有的参数
 strict        : true     # true: 严格模式，要求所有的函数都运行在ES5严格模式下
-maxparams     : 3        # {int} 函数最大的参数数量
+maxparams     : 5        # {int} 函数最大的参数数量
 maxdepth      : false    # {int} 最大嵌套深度(函数内)
 maxstatements : false    # {int} 每个函数最多的声明数量
 maxcomplexity : false    # {int} Max cyclomatic complexity per function
